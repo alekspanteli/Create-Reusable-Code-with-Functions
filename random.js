@@ -13,14 +13,28 @@
 // alert(sayHi());
 
 
-function sayHi(){
- const  res = 12 + 3;
-  return res;
+// function sayHi(){
+//  const  res = 12 + 3;
+//   return res;
+// }
+// const finalResult = sayHi();
+// console.log(finalResult);
+
+
+
+function isFieldEmpty(){
+  const field = document.querySelector("#info");
+  if (!field.value){
+    return true;
+  } else {
+    return false;
+  }
 }
 
+const fieldTest = isFieldEmpty();
 
-const finalResult = sayHi();
-
-
-
-console.log(finalResult);
+if (fieldTest){
+  console.log("Field is empty!")
+} else{
+  console.log("Field is NOT empty!")
+}
