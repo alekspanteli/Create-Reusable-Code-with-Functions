@@ -6,8 +6,21 @@
 // sayHello()
 // sayHello()
 
+// function sayHi(){
+//   return "Hello World!";
+// }
+
+// alert(sayHi());
+
+
 function sayHi(){
-  return "Hello World!";
+ const  res = 12 + 3;
+  return res;
 }
 
-alert(sayHi());
+
+const finalResult = sayHi();
+
+
+
+console.log(finalResult);
